@@ -12,6 +12,7 @@ import { ParkinsonComponent } from './parkinson/parkinson.component';
 import { BrainTumorComponent } from './brain-tumor/brain-tumor.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DiseasesComponent } from './diseases/diseases.component';
+import { HeartDiseaseComponent } from './heart-disease/heart-disease.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { DiseasesComponent } from './diseases/diseases.component';
     ParkinsonComponent,
     BrainTumorComponent,
     DiseasesComponent,
+    HeartDiseaseComponent
   ],
   imports: [
     BrowserModule,

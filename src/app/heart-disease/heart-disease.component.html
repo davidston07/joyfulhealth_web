@@ -1,0 +1,127 @@
+<div class="card-container-form">
+  <p style="padding: 0px 0px">
+    <mat-form-field class="input-field" appearance="outline">
+      <mat-label>Age</mat-label>
+      <input
+        type="number"
+        maxlength="2"
+        matInput
+        placeholder="Please enter your age"
+      />
+      <mat-icon matSuffix>tag</mat-icon>
+    </mat-form-field>
+  </p>
+
+  <mat-form-field>
+    <mat-label>Sex</mat-label>
+    <mat-select>
+      <mat-option value="male">Male</mat-option>
+      <mat-option value="female">Female</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Chest pain type</mat-label>
+    <mat-select>
+      <mat-option value="chestpain-ta">TA: Typical Angina</mat-option>
+      <mat-option value="chestpain-ata">ATA: Atypical Angina</mat-option>
+      <mat-option value="chestpain-nap">NAP: Non-Anginal Pain</mat-option>
+      <mat-option value="chestpain-asy">ASY: Asymptomatic</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <p style="padding: 0px 0px">
+    <mat-form-field class="input-field" appearance="outline">
+      <mat-label>RestingBP</mat-label>
+      <input
+        type="number"
+        maxlength="2"
+        matInput
+        placeholder="resting blood pressure [mm Hg]"
+      />
+    </mat-form-field>
+  </p>
+
+  <p style="padding: 0px 0px">
+    <mat-form-field class="input-field" appearance="outline">
+      <mat-label>Cholesterol</mat-label>
+      <input
+        type="number"
+        maxlength="2"
+        matInput
+        placeholder="serum cholesterol [mm/dl]"
+      />
+    </mat-form-field>
+  </p>
+
+  <p style="padding: 0px 0px">
+    <mat-form-field class="input-field" appearance="outline">
+      <mat-label>FastingBS</mat-label>
+      <input
+        type="number"
+        maxlength="2"
+        matInput
+        placeholder="fasting blood sugar"
+      />
+    </mat-form-field>
+  </p>
+
+  <p style="padding: 0px 0px">
+    <mat-form-field class="input-field" appearance="outline">
+      <mat-label>RestingECG</mat-label>
+      <input
+        type="number"
+        maxlength="2"
+        matInput
+        placeholder="resting electrocardiogram results"
+      />
+    </mat-form-field>
+  </p>
+
+  <p style="padding: 0px 0px">
+    <mat-form-field class="input-field" appearance="outline">
+      <mat-label>MaxHR</mat-label>
+      <input
+        type="number"
+        maxlength="2"
+        matInput
+        placeholder="maximum heart rate achieved"
+      />
+    </mat-form-field>
+  </p>
+
+  <mat-form-field>
+    <mat-label>ExerciseAngina</mat-label>
+    <mat-select>
+      <mat-option value="exercise-angina-yes">Yes</mat-option>
+      <mat-option value="exercise-angina-no">No</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <p style="padding: 0px 0px">
+    <mat-form-field class="input-field" appearance="outline">
+      <mat-label>OldPeak</mat-label>
+      <input type="number" maxlength="2" matInput placeholder="oldpeak = ST" />
+    </mat-form-field>
+  </p>
+
+  <mat-form-field>
+    <mat-label>ST_Slope</mat-label>
+    <mat-select #inputField>
+      <mat-option value="upsloping">Up: upsloping</mat-option>
+      <mat-option value="flat">Flat: flat</mat-option>
+      <mat-option value="downsloping">Down: downsloping</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <section class="card-container">
+    <button
+      type="submit"
+      (click)="submit(inputField.value)"
+      mat-raised-button
+      color="primary"
+    >
+      Submit
+    </button>
+  </section>
+</div>
