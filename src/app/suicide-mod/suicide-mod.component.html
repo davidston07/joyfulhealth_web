@@ -1,0 +1,32 @@
+<h1
+  style="
+    font-family: fantasy;
+    font-style: oblique;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 8%;
+  "
+>
+  How are you feeling today?
+</h1>
+
+<div class="card-container">
+  <mat-form-field (ngSubmit)="submit($event)" class="text-area">
+    <mat-label>What's on your mind?</mat-label>
+    <textarea #inputField matInput></textarea>
+  </mat-form-field>
+</div>
+
+<section class="card-container">
+  <div class="example-button-row">
+    <button
+      type="submit"
+      (click)="submit(inputField.value)"
+      mat-raised-button
+      color="primary"
+    >
+      Submit
+    </button>
+  </div>
+</section>

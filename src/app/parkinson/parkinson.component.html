@@ -1,0 +1,35 @@
+<h1
+  style="
+    font-family: fantasy;
+    font-style: oblique;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 8%;
+  "
+>
+  How are you feeling today?
+</h1>
+
+<!-- <div class="card-container"> -->
+<!-- <mat-form-field (ngSubmit)="submit($event)" class="text-area">
+    <mat-label>What's on your mind?</mat-label>
+    <textarea #inputField matInput></textarea>
+  </mat-form-field> -->
+<!-- </div> -->
+
+<div class="card-container">
+  <input
+    type="file"
+    class="file-upload"
+    onChange="console.log(event.target.files)"
+    accept="image/png, image/jpeg"
+    (change)="onFileSelected($event)"
+  />
+</div>
+
+<section class="card-container">
+  <div class="example-button-row">
+    <button type="submit" mat-raised-button color="primary">Submit</button>
+  </div>
+</section>
