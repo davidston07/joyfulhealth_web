@@ -3,11 +3,11 @@ import { Component } from '@angular/core';
 import { AppConstants } from '../const/app-constants';
 
 @Component({
-  selector: 'app-parkinson',
-  templateUrl: './parkinson.component.html',
-  styleUrls: ['./parkinson.component.css'],
+  selector: 'app-brain-tumor',
+  templateUrl: './brain-tumor.component.html',
+  styleUrls: ['./brain-tumor.component.css'],
 })
-export class ParkinsonComponent {
+export class BrainTumorComponent {
   constructor(private httpClient: HttpClient) {}
 
   public loading: boolean = false;

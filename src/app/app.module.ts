@@ -9,6 +9,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './material.module';
 import { SuicideModComponent } from './suicide-mod/suicide-mod.component';
 import { ParkinsonComponent } from './parkinson/parkinson.component';
+import { BrainTumorComponent } from './brain-tumor/brain-tumor.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DiseasesComponent } from './diseases/diseases.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +20,15 @@ import { ParkinsonComponent } from './parkinson/parkinson.component';
     HomeComponent,
     SuicideModComponent,
     ParkinsonComponent,
+    BrainTumorComponent,
+    DiseasesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
